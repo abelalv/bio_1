@@ -1,0 +1,162 @@
+---
+title: "Las derivadas"
+author: "Abel Alvarez"
+format: revealjs
+theme: night
+slide-number: true
+---
+
+# Derivadas
+
+## Definición
+
+La derivada de una función $f(x)$ en un punto $x_0$ es el límite
+
+$$
+f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}
+$$
+
+siempre que este límite exista.
+
+---
+
+## Ejemplo
+
+Calcular la derivada de la función $f(x) = x^2$ en el punto $x_0 = 2$.
+
+## Solución
+
+$$
+f'(2) = \lim_{h \to 0} \frac{(2+h)^2 - 2^2}{h} = \lim_{h \to 0} \frac{4 + 4h + h^2 - 4}{h} = \lim_{h \to 0} \frac{4h + h^2}{h} = \lim_{h \to 0} 4 + h = 4
+$$
+
+---
+
+## Funciones derivadas
+
+Una función continua $f(x)$ en el intervalo $[a, b]$ es derivable en el intervalo $(a, b)$ si la derivada de $f(x)$ existe en cada punto $x$ en el intervalo $(a, b)$  y se denota como $f'(x)$.
+
+---
+
+### Regla de las derivadas
+
+1. La derivada de una constante es cero.
+
+$$  \frac{d}{dx} c = 0 $$
+
+2. La derivada de $x^n$ es $nx^{n-1}$.
+
+$$  \frac{d}{dx} x^n = nx^{n-1} $$
+
+3. Sea $f$ y $g$ dos funciones derivables, entonces
+
+$$  \frac{d}{dx} (f(x) + g(x)) = f'(x) + g'(x) $$
+
+---
+
+4. Sea $f$ una función derivable y $c$ una constante, entonces
+
+$$  \frac{d}{dx} cf(x) = c f'(x) $$
+
+5. Sea $f$ y $g$ dos funciones derivables, entonces
+
+$$  \frac{d}{dx} (f(x)g(x)) = f'(x)g(x) + f(x)g'(x) $$
+
+6. Sea $f$ y $g$ dos funciones derivables, entonces
+
+$$  \frac{d}{dx} \left(\frac{f(x)}{g(x)}\right) = \frac{f'(x)g(x) - f(x)g'(x)}{g^2(x)} $$
+
+---
+
+Monod modeló la tasa de crecimiento per cápita RR de la bacteria Escherichia coli mediante la función
+
+$$R(N)=\frac{SN}{c+N}$$
+
+donde $N$ es la concentración del nutriente, $S$ es su nivel de saturación, y cc es una constante positiva. Calcula $\frac{dR}{dN}$​ e interprétalo.
+
+---
+
+- Como podemos inteprerar la derivada de la función $R(N)$?
+
+- $\frac{dR}{dN} \to 0$ y cuando $N\to \infty$?
+
+![Monod](figures/mod.png)
+
+---
+
+**Interpretación gráfica de la derivada**
+
+![Derivada](figures/derivada.png)
+
+---
+
+Prevalencia e incidencia del VIH
+
+En epidemiología, la prevalencia de una enfermedad, Pstd, es el número de individuos que están actualmente infectados con la enfermedad en un momento dado, t. La incidencia de una enfermedad es la tasa a la que nuevos individuos están contrayendo la enfermedad. Durante la propagación inicial del VIH en los Estados Unidos, la prevalencia aumentó, cambiando únicamente como resultado de nuevas infecciones. En consecuencia, $P(t)\approx$ incidencia desde 1977 hasta 1990 . Haz un boceto de un gráfico de la incidencia del VIH durante este período de tiempo.
+
+---
+
+![](figures/HIV.png)
+
+
+---
+
+### Interpretación de la derivada 2 
+
+![Derivada](figures/int_grap.png)
+
+
+---
+
+**Nota** Una función continua en un intervalo cerrado $[a, b]$  **no es necesariamente**  derivable en el intervalo $(a, b)$.
+
+
+---
+
+
+## Derivada de una función exponencial
+
+La derivada de la función exponencial $f(x) = a^x$ es
+
+$$
+\frac{d}{dx} a^x = a^x \ln(a)
+$$
+
+
+$$
+\frac{d}{dx} e^x = e^x
+$$
+
+
+---
+
+## Derivada de una función trigonométrica
+
+![](figures/sin.png)
+
+---
+
+## Derivada de una función trigonométrica
+
+La derivada de la función seno $f(x) = \sin(x)$ es
+
+$$\frac{d}{dx} \sin(x) = \cos(x)$$
+
+La derivada de la función coseno $f(x) = \cos(x)$ es
+
+$$\frac{d}{dx} \cos(x) = -\sin(x)$$
+
+---
+
+
+## Encuentre las derivadas de la funciones 
+
+- $y=tan(x)$
+
+- $y=sec(x)$
+
+- $y=csc(x)$
+
+- $y=cot(x)$
+
+---
