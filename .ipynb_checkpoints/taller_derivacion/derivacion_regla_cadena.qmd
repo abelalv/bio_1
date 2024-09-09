@@ -1,0 +1,46 @@
+---
+title: "Taller regla de la cadena"
+author: "Abel Alvarez"
+date: "09/09/2024"
+format: pdf
+header-includes:
+  - |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \cfoot{\thepage}
+    \setlength{\headheight}{15pt}
+---
+
+
+La regla de la cadena es una herramienta poderosa para derivar funciones compuestas. Si $y = f(g(x))$, entonces la derivada de $y$ con respecto a $x$ es:
+
+$$
+\frac{dy}{dx} = f'(g(x)) \cdot g'(x)
+$$
+
+
+**Ejercicios**
+
+Derivar las siguientes funciones usando la regla de la cadena.
+
++  $y = \sin(3x)$.
+
++ $y = e^{2x^2}$.
+
+
++ $y = (5x^3 + 2)^4$.
+
++ $y = \frac{1}{7x+1}$.
+
++ $y = \cos(x^2 + 1)$.
+
++ $y = \sqrt{4x + 3}$.
+
++ $y = (2x^2 + 1)^5$.
+
++ $y = e^{\sin(x)}$.
+
++ $y= \frac{\sin(2x)}{\cos(2x)}$
+
++ $y = \frac{1}{\sqrt{x^2 + 1}}$.
