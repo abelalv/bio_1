@@ -1,0 +1,62 @@
+---
+title: "Pontificia Universidad Javeriana"
+author: "Matemáticas Para Biologia I"
+date: "2024-09-30"
+format: 
+  pdf:
+    documentclass: article  # o cualquier otra clase de documento LaTeX
+    keep-tex: true  # para mantener el archivo .tex generado
+    toc: false # para incluir tabla de contenidos, si lo deseas
+    toc-depth: 2  # niveles de la tabla de contenidos
+    number-sections: true  # para numerar las secciones
+    geometry: "margin=1in"  # para ajustar los márgenes
+editor: visual  # si prefieres utilizar el editor visual
+---
+
+
+**Taller derivada implicita**
+
+
+
+ 1. Halla la derivada de $y$ con respecto a $x$ de la siguiente ecuación implícita:
+$$ x^2 + y^2 = 25 $$
+
+2. Dada la ecuación $x^3 + y^3 = 6xy$, encuentra $\frac{dy}{dx}$.
+
+3. En biología, el crecimiento de dos poblaciones está relacionado de la siguiente manera:
+$$ x^2 + xy + y^2 = 50 $$
+donde $x$ representa la población de una especie y $y$ representa la población de otra especie. Encuentra $\frac{dy}{dx}$ y explica qué significa en términos del cambio relativo entre ambas poblaciones.
+
+4. Para la siguiente curva implícita, encuentra $\frac{dy}{dx}$:
+$$ e^{x} + y^2 = 2xy $$
+
+6. Supongamos que la concentración de una sustancia en una célula está dada implícitamente por la ecuación $x^2y + xy^2 = 10$, donde $x$ representa el tiempo y $y$ la concentración. Encuentra la tasa de cambio de la concentración con respecto al tiempo $\frac{dy}{dx}$ en términos de $x$ y $y$.
+
+7. Dada la ecuación implícita $2x + 3\sin(y) = x^2y$, encuentra $\frac{dy}{dx}$.
+
+8. Resuelve la derivada implícita de la ecuación $xy + \ln(y) = 3$.
+
+9. En un modelo biológico, la relación entre dos variables $x$ (proporción de presas) y $y$ (proporción de depredadores) está dada por la ecuación implícita:
+$$ x + y^3 = xy $$
+Encuentra $\frac{dy}{dx}$ y discute cómo un cambio en la proporción de presas afecta la proporción de depredadores.
+
+
+10. **Crecimiento de una población** La población de una colonia de bacterias se duplica cada 3 horas. Si inicialmente hay 500 bacterias, la población $P(t)$ en cualquier tiempo $t$ (en horas) está dada por la fórmula de crecimiento exponencial:
+$$ P(t) = P_0 e^{kt} $$
+donde $P_0$ es la población inicial y $k$ es la constante de crecimiento.
+
++ Encuentra el valor de $k$.
+
++ ¿Cuál será la población después de 9 horas?
+
++ ¿Cuánto tiempo tomará para que la población alcance las 8000 bacterias?
+
+
+11. **Descomposición radiactiva** Una sustancia radiactiva se descompone siguiendo una ley de descomposición exponencial. Si la cantidad inicial de la sustancia es 120 gramos y se sabe que después de 5 horas solo quedan 75 gramos, la cantidad de sustancia restante en cualquier momento $t$ está dada por:
+$$ N(t) = N_0 e^{-kt} $$
+
++ Encuentra el valor de la constante de descomposición $k$.
+
++ ¿Cuánta sustancia quedará después de 10 horas?
+
++ ¿En cuánto tiempo se descompondrá el 90\% de la sustancia?

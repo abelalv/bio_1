@@ -1,0 +1,151 @@
+---
+title: "Pontificia Universidad Javeriana"
+author: "Matemáticas Para Biologia I"
+format: 
+  pdf:
+    documentclass: article  # o cualquier otra clase de documento LaTeX
+    keep-tex: true  # para mantener el archivo .tex generado
+    toc: false # para incluir tabla de contenidos, si lo deseas
+    toc-depth: 2  # niveles de la tabla de contenidos
+    number-sections: true  # para numerar las secciones
+    geometry: "margin=1in"  # para ajustar los márgenes
+editor: visual  # si prefieres utilizar el editor visual
+---
+
+
+# Taller de máximos y mínimos
+
+
+
+
+1. Encuentra dos números cuya diferencia es 100 y cuyo producto es mínimo.
+
+2. Encuentra dos números positivos cuyo producto es 100 y cuya suma es mínima.
+
+3. La suma de dos números positivos es 16. ¿Cuál es el valor mínimo posible de la suma de sus cuadrados?
+
+4. Encuentra las dimensiones de un rectángulo con un perímetro de 100 metros cuyo área es la mayor posible.
+
+
+
+
+5. Observe las siguientes gráficas de funciones polinomiales, haga el bosquejo de la primera y segunda derivada de cada una de ellas y determine los puntos críticos de cada función, máximos, mínimos y puntos de inflexión.
+
+```{python}
+#| echo: false
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Definir la función polinomial de segundo orden
+def polinomio_segundo(x):
+    return 2*x**3 - 3*x + 1
+
+x = np.linspace(-10, 10, 400)
+y = polinomio_segundo(x)
+
+# Graficar
+plt.figure(figsize=(6, 4))
+plt.plot(x, y)
+plt.title('fUNCIÓN')
+plt.xlabel('x')
+plt.ylabel('f(x)')
+plt.grid(True)
+plt.legend()
+plt.show()
+```
+6. **Problema: Forrajeo de néctar por abejorros**
+
+Muchos animales forrajean recursos que están distribuidos en parches discretos. Por ejemplo, los abejorros visitan muchas flores, recolectando néctar de cada una. La cantidad de néctar $N(t)$ consumida de cualquier flor aumenta con el tiempo que el abejorro pasa en esa flor, pero con rendimientos decrecientes. Supongamos que esta función está dada por:
+
+$$
+N(t) = \frac{0.3t}{t+2}
+$$
+
+donde $t$ se mide en segundos y $N(t)$ en miligramos. Supongamos también que el tiempo que tarda una abeja en viajar de una flor a la siguiente es de 4 segundos.
+
+a. Si una abeja pasa $t$ segundos en cada flor, encuentra una ecuación para la cantidad promedio de néctar consumido por segundo, desde el comienzo de la visita a una flor hasta el comienzo de la visita a la siguiente flor.
+
+b. Supongamos que los abejorros forrajean en una flor por un tiempo que maximiza la tasa promedio de consumo de néctar obtenida en la parte (a). ¿Cuál es este tiempo de forrajeo óptimo?
+
+
+7. **Lanzamiento**
+Un hombre lanza su bote desde el punto A en la orilla de un canal de agua recto, que tiene 3 km de ancho, y quiere llegar al punto B, ubicado 8 km al sur en la orilla opuesta, lo más rápido posible (ver Figura 5). Podría remar su bote directamente a través del canal hasta el punto C y luego correr hasta B, o podría remar directamente hasta B, o podría remar hasta algún punto D entre C y B y luego correr hasta B. Si puede remar a una velocidad de 6 km/h y correr a una velocidad de 8 km/h, ¿en qué punto debería desembarcar para llegar a B lo antes posible? (Suponemos que el agua en el canal no está en movimiento).
+
+
+8. **Forrajeo de Aves Acuáticas**
+
+
+
+Las aves acuáticas forrajean bajo el agua y periódicamente regresan a la superficie para reponer sus reservas de oxígeno. Las reservas de oxígeno aumentan con la cantidad de tiempo que pasan en la superficie, pero de manera decreciente, de acuerdo con el modelo:
+
+$$
+O(t) = \frac{20t}{5 + t}
+$$
+
+donde $t$ es el tiempo que pasan en la superficie (en segundos). Supongamos que el tiempo de viaje de ida y vuelta hacia y desde el área de forrajeo bajo el agua es $T$ segundos y que el oxígeno se consume a una tasa constante de \(r\) mL/s mientras el ave está bajo el agua. Además, supongamos que el ave forrajea hasta que tiene justo suficiente oxígeno para regresar a la superficie.
+
+a. Si \(Q\) es la fracción de un ciclo de buceo completo que el ave pasa forrajeando, encuentra una ecuación para \(Q\) como una función del tiempo en la superficie \(t\).
+
+b. Si \(T = 2\) segundos y \(r = 1\) mL/s, encuentra el tiempo en la superficie \(t\) que maximiza la fracción de tiempo que pasa forrajeando.
+
+
+9. **Pesca sostenible**
+
+
+Para muchas poblaciones naturales de peces, el número neto de nuevos reclutas a la población en un año dado puede modelarse como una función del tamaño de la población existente \(N\), mediante una ecuación de la forma:
+
+$$
+R(N) = rN\left(1 - \frac{N}{K}\right)
+$$
+
+donde \(r\) y \(K\) son constantes positivas. (A \(K\) se le llama la capacidad de carga). La población aumentará si el número neto de reclutas \(R(N)\) es positivo, y disminuirá si \(R(N)\) es negativo. Por lo tanto, dado que \(R(N)\) es positivo cuando \(0 < N < K\) y \(R(N)\) es negativo cuando \(N > K\), esperamos que la población se estabilice en un tamaño constante de \(N = K\).
+
+Si la población está sujeta a cosecha, \(N\) comenzará a cambiar y, una vez que la población se haya estabilizado nuevamente, el número de peces cosechados cada año, que denotamos por \(H\), debe ser igual al reclutamiento neto de ese año; es decir:
+
+$$
+R(N) = H
+$$
+
+a. Supongamos que \(H = hN\), donde \(h\) es una medida del "esfuerzo de pesca" realizado. ¿Cuál es el tamaño de la población una vez que se ha estabilizado?
+
+b. Expresa la tasa total de cosecha \(H\) como una función de \(h\) una vez que la población se haya estabilizado, y determina el esfuerzo de pesca que resulta en la mayor tasa de cosecha posible.
+
+c. ¿Cuál es el tamaño de la población una vez que se ha estabilizado si se utiliza este esfuerzo de pesca óptimo, y cuál es la cosecha total?
+
+
+10. **Saranpio**
+La función de patogénesis del sarampión:
+
+$$
+f(t) = -t(t - 21)(t + 1)
+$$
+
+se utiliza en la Sección 5.1 para modelar el desarrollo de la enfermedad, donde \(t\) se mide en días y \(f(t)\) representa el número de células infectadas por mililitro de plasma. ¿Cuál es el tiempo de infección máxima para el virus del sarampión?
+
+
+11. 
+Un agricultor tiene 750 pies de cercado y quiere cercar un área rectangular, dividiéndola en cuatro corrales con cercado paralelo a un lado del rectángulo. ¿Cuál es el área total más grande posible de los cuatro corrales?
+
+a. Dibuja varios diagramas que ilustren la situación, algunos con corrales anchos y poco profundos y otros con corrales profundos y estrechos. Calcula las áreas totales de estas configuraciones. ¿Parece que existe un área máxima? Si es así, estímala.
+
+b. Dibuja un diagrama que ilustre la situación general. Introduce notación y etiqueta el diagrama con tus símbolos.
+
+c. Escribe una expresión para el área total.
+
+d. Usa la información proporcionada para escribir una ecuación que relacione las variables.
+
+
+12. **Forrajeo de abejas 2**
+
+Supongamos que, en lugar de la función específica de néctar del Ejercicio 6, tenemos una función arbitraria \(N(t)\) con las condiciones \(N(0) = 0\), \(N(t) > 0\), \(N'(t) > 0\), \(N''(t) < 0\), y un tiempo de viaje arbitrario \(T\).
+
+a. Interpreta las condiciones sobre la función \(N(t)\).
+
+b. Demuestra que el tiempo de forrajeo óptimo \(t\) satisface la ecuación:
+
+$$
+N'(t) = \frac{N(t)}{t + T}
+$$
+
+c. Demuestra que, para cualquier tiempo de forrajeo \(t\) que satisfaga la ecuación en la parte (b), se cumple la condición de la segunda derivada para un valor máximo de la función de forrajeo \(f\) en el Ejercicio 6.

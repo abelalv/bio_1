@@ -1,0 +1,91 @@
+---
+title: "Parcial 2: Derivadas"
+author: "Abel Alvarez"
+date: ""
+format: pdf
+header-includes:
+  - |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \cfoot{\thepage}
+    \setlength{\headheight}{15pt}
+---
+
+
+
+# Derivadas
+
+
+
+1. Observa el siguiente gráfico que muestra la función $f(x) = x^3-30x+5$ y su derivada. Explica en tus palabras qué información nos da la derivada sobre la pendiente de la función en diferentes puntos. ¿Qué sucede en $x = 0$?
+
+
+```{python}
+
+
+#| echo: false
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Graficamos la función f(x) = x^2 para la interpretación de derivadas
+x = np.linspace(-5, 5, 400)
+y = x**3-30*x+5
+dy = 3*x**2-30  # Derivada de f(x) = 2x
+
+fig, ax = plt.subplots()
+ax.plot(x, y, label='f(x) = x^3-30x+5', color='blue')
+ax.plot(x, dy, label="f'(x) =3x^2-30", linestyle='--')
+
+ax.set_xlabel('x')
+ax.set_ylabel('f(x) y f\'(x)')
+ax.axhline(0, color='black',linewidth=0.5)
+ax.axvline(0, color='black',linewidth=0.5)
+ax.legend()
+plt.title('Función  y su derivada')
+plt.grid(True)
+plt.show()
+
+```
+
+¿Con el gráfico de la función derivada puedo determinar donde la función esta creciendo y/o decreciendo? ¿Cómo?
+
+
+2. En un ecosistema, la población de una especie $P(t)$ decrece de acuerdo a la función $P(t) = 100 e^{-0.1t}$, donde $t$ es el tiempo en años. ¿Qué información nos da la derivada de esta función sobre la tasa de decrecimiento de la población en cualquier instante $t$?
+
+3. Calcule las derivadas 
+
++  $f(x)=x^2\sin(x)$ 
+
++ $g(x) = \frac{x^4}{\cos(4x)}$ 
+
++ $h(x) = e^{2x+\cos(2x)}$.
+
+4. Realice un bosquejo de como seria la función $f(x)$ si sabemos que la gráfica de la función derivada es la siguiente:
+
+
+```{python}
+
+
+#| echo: false
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Graficamos la función f(x) = x^2 para la interpretación de derivadas
+x = np.linspace(-5, 5, 400)
+
+dy = x**3+3*x**2-30  # Derivada de f(x) = 2x
+
+
+
+plt.plot(x, dy, label="f\'(x)")
+plt.xlabel('x')
+plt.ylabel('f\'(x)')
+plt.title('Función  derivada')
+plt.grid(True)
+plt.show()
+
+```
+
