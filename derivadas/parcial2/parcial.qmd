@@ -25,11 +25,11 @@ ax.plot(x, y, label='f(x) ', color='blue')
 
 
 ax.set_xlabel('x')
-ax.set_ylabel('f(x) y f\'(x)')
+ax.set_ylabel('f(x)')
 ax.axhline(0, color='black',linewidth=0.5)
 ax.axvline(0, color='black',linewidth=0.5)
 ax.legend()
-plt.title('Función cuadrática y su derivada')
+plt.title('Función')
 plt.grid(True)
 plt.show()
 
