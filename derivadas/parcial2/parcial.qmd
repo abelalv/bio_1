@@ -21,7 +21,7 @@ x = np.linspace(-1, 4.2, 400)
 y = 2*x**3-10*x**2+6*x
 
 fig, ax = plt.subplots()
-ax.plot(x, y, label='f(x) = x^3-30x', color='blue')
+ax.plot(x, y, label='f(x) ', color='blue')
 
 
 ax.set_xlabel('x')
@@ -36,7 +36,7 @@ plt.show()
 ```
 
 
-2. Encuentra
+2. Encuentra de la función $f(x) = 2x^3-10x^2+6x$ los siguientes puntos:
 
 a. Puntos críticos
 
@@ -46,10 +46,9 @@ c. Puntos de inflexión
 
 d. Intervalos de concavidad
 
-e. $limite_{x\to \infty} f(x)$
+e. $limite_{x\to \pm \infty} f(x)$
 
 
 3. Resuelve el siguiente problema de optimización
-
 Un agricultor tiene 2400 m de alambre y quiere cercar un campo rectangular de longitud $x$ y anchura $y$. Si el campo está junto a un río, ¿cuál es la longitud y la anchura del campo que maximiza el área?
 
