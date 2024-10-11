@@ -1,0 +1,55 @@
+---
+title: "Parcial Matemáticas para Biología"
+format: pdf
+geometry: margin=2cm
+---
+
+
+1. Observa la siguiente gráfica, realiza el bosquejo de la grafica de la  primera y segunda derivada 
+
+
+```{python}
+
+
+#| echo: false
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Graficamos la función f(x) = x^2 para la interpretación de derivadas
+x = np.linspace(-1, 4.2, 400)
+y = 2*x**3-10*x**2+6*x
+
+fig, ax = plt.subplots()
+ax.plot(x, y, label='f(x) = x^3-30x', color='blue')
+
+
+ax.set_xlabel('x')
+ax.set_ylabel('f(x) y f\'(x)')
+ax.axhline(0, color='black',linewidth=0.5)
+ax.axvline(0, color='black',linewidth=0.5)
+ax.legend()
+plt.title('Función cuadrática y su derivada')
+plt.grid(True)
+plt.show()
+
+```
+
+
+2. Encuentra
+
+a. Puntos críticos
+
+b. Intervalos de crecimiento y decrecimiento
+
+c. Puntos de inflexión
+
+d. Intervalos de concavidad
+
+e. $limite_{x\to \infty} f(x)$
+
+
+3. Resuelve el siguiente problema de optimización
+
+Un agricultor tiene 2400 m de alambre y quiere cercar un campo rectangular de longitud $x$ y anchura $y$. Si el campo está junto a un río, ¿cuál es la longitud y la anchura del campo que maximiza el área?
+
