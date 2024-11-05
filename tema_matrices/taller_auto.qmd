@@ -1,0 +1,49 @@
+---
+title: "Taller Algebra lineal"
+author: "Pontificia Universidad Javeriana - Cali"
+format: pdf
+geometry: "left=25mm, right=25mm, top=20mm, bottom=20mm"
+fontsize: 11pt
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+citecolor: blue
+header-includes:
+  - \usepackage{amsmath,amssymb,amsthm,textcomp}
+  - \usepackage{multicol}
+  - \usepackage{tikz}
+  - \usepackage{booktabs}
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \lfoot{Taller}
+  - \rfoot{Page \thepage\ /\ \pageref*{LastPage}}
+---
+
+
+1. Encuentre los valores y vectores propios de las matrices
+
+    - $A = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}$
+
+    - $B = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix}$
+
+    - $C = \begin{pmatrix} 1 & 0 & -1 \\ 0 & 2 & 0 \\ 1 & 0 & 3 \end{pmatrix}$
+
+    - $D = \begin{pmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 1 & 0 & 1 \end{pmatrix}$
+
+    - $E = \begin{pmatrix} 1 & 0 & 1 \\ 0 & 1 & 0 \\ -1 & 0 & 1 \end{pmatrix}$
+
+
+2. Justifique si es falso o verdadero
+
+- Si $\lambda$ es un valor propio de $A$ entonces $\lambda^2$ es un valor propio de $A^2$.
+
+- Si $\lambda$ es un valor propio de $A$ entonces $1/\lambda$ es un valor propio de $A^{-1}$.
+
+- Si $x=0$ es un vector propio de $A$ entonces $A$ es singular.
+
+- Si $A$ es singular entonces $0$ es un valor propio de $A$.
+
+- Una matriz diagonalizable es porque todos los autovalores son distintos.
+
+- La multiplicación de los valores propios de una matriz es igual al determinante de la matriz.
+
